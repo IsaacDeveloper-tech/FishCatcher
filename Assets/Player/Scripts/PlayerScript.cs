@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public float maxFishes;
-    public float fishes;
-    public float money;
+    public FloatType maxFishes;
+    public FloatType fishes;
+    public FloatType money;
 
 
     public GathererScript collector;
@@ -34,14 +34,14 @@ public class PlayerScript : MonoBehaviour
             temp = 0;
             yield return new WaitForSeconds(1);
 
-            temp = fishes + collector.GetFishes();
+            temp = fishes.runtimeValue + collector.GetFishes();
 
-            if (temp < maxFishes)
+            if (temp < maxFishes.runtimeValue)
             {
-                fishes = temp;
+                fishes.runtimeValue = temp;
             }
             else{
-                fishes = maxFishes;
+                fishes.runtimeValue = maxFishes.runtimeValue;
             }
         }
     }

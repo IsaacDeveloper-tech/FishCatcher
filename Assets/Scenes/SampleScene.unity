@@ -406,9 +406,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181ff3aa2586a994ba574d6d185ad2e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxFishes: 0
-  fishes: 0
-  money: 0
+  maxFishes: {fileID: 11400000, guid: 2fe1ca3535e4f0a4393e2f7e0f219bb4, type: 2}
+  fishes: {fileID: 11400000, guid: 583f72b64a0ebcf42a1379aa646fa6a6, type: 2}
+  money: {fileID: 11400000, guid: a6a1823d848ee144f9da7a76ed0e437a, type: 2}
   collector: {fileID: 848726061}
 --- !u!4 &818390455
 Transform:
@@ -533,5 +533,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3aab928827ec8a4089da908354037e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishPerSecondBase: 100
-  multiplier: 1
+  fishPerSecondBase: {fileID: 11400000, guid: e4410e3d5912929418c6bfe14e4ec7b3, type: 2}
+  multiplier: {fileID: 11400000, guid: 6103baf6ac79dbf4fb23a413fdd563f8, type: 2}

@@ -5,16 +5,16 @@ using UnityEngine;
 public class GathererScript : MonoBehaviour
 {
 
-    public float fishPerSecondBase;
-    public float multiplier;
+    public FloatType fishPerSecondBase;
+    public FloatType multiplier;
 
     public void IncreaseMultiplier(float pmultiplier)
     {
-        multiplier += pmultiplier;
+        multiplier.runtimeValue += pmultiplier;
     }
 
     public float GetFishes()
     {
-        return fishPerSecondBase * multiplier;
+        return fishPerSecondBase.runtimeValue * multiplier.runtimeValue;
     }
 }
