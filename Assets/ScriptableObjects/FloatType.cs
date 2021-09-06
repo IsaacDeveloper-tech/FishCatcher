@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 
-[CreateAssetMenu(fileName = "floatvalue", menuName = "Values/FloatType")]
+[CreateAssetMenu(fileName = "floatvalue", menuName = "ScriptableObjects/FloatType")]
 public class FloatType : ScriptableObject, ISerializationCallbackReceiver
 {
     public float value;
