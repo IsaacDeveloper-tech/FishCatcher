@@ -16,51 +16,60 @@ public class PowerUp : ScriptableObject
     public string namePU;
     public float basePrice;
     public float multiplier;
-    public int numOfPowerUp;
-    public FloatType attributeToApplyBonus;
+    public List<FloatType> attributeToApplyBonus = new List<FloatType>();
     public string description;
     public Bonus typeOfBonus;
     public Sprite icon;
 
 
-    public float GetBonus(float pnum)
+    private float numOfPowerUps;
+
+    public void ApplyBonus()
     {
 
         switch (typeOfBonus)
         {
             case Bonus.Add:
-                return SetAddedBonus(pnum);
+                SetAddedBonus();
+                break;
             case Bonus.Multiplie:
-                return SetMultipliedBonus(pnum);
-            default:
-                return 0;
+                SetMultipliedBonus();
+                break;
         }
+
+        AddPowerUp();
 
     }
 
-    private float SetMultipliedBonus(float pnum)
+
+
+
+    private void SetMultipliedBonus()
     {
-        float bonus = pnum;
-
-        for (int i = 0; i < numOfPowerUp; i++)
+        for (int i = 0; i < attributeToApplyBonus.Count; i++)
         {
-            bonus *= multiplier;
+            attributeToApplyBonus[i].runtimeValue = attributeToApplyBonus[i].value * multiplier;
         }
-
-        return bonus;
     }
 
 
-    private float SetAddedBonus(float pnum)
+    private void SetAddedBonus()
     {
-        float bonus = pnum;
-
-        for (int i = 0; i < numOfPowerUp; i++)
+        for (int i = 0; i < attributeToApplyBonus.Count; i++)
         {
-            bonus += multiplier;
+            attributeToApplyBonus[i].runtimeValue = attributeToApplyBonus[i].value + multiplier;
         }
+    }
 
-        return bonus > 0 ? bonus : 0;
+
+    public void AddPowerUp()
+    {
+        numOfPowerUps++;
+    }
+
+    public void SubtractPowerUp()
+    {
+        //code
     }
 
 }
