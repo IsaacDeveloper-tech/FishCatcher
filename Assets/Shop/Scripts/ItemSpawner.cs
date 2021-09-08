@@ -26,11 +26,17 @@ public class ItemSpawner : MonoBehaviour, IFactory
     {
         ItemShopComponent component = skeleton.GetComponent<ItemShopComponent>();
 
+        GameObject temp = null;
+
         for (int i = 0; i < powerUps.Count; i++)
         {
             component.powerup = powerUps[i];
 
-            Instantiate(skeleton);
+            temp = Instantiate(skeleton);
+
+            
+
+            temp.transform.SetParent(transform);
         }
     }
 

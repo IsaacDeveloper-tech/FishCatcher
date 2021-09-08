@@ -20,6 +20,7 @@ public class PowerUp : ScriptableObject
     public float multiplier;
     public string description;
     public Bonus typeOfBonus;
+    public float numOfPowerUps;
 
     [Header("This bonus change this values")]
     public List<FloatType> attributeToApplyBonus = new List<FloatType>();
@@ -28,7 +29,7 @@ public class PowerUp : ScriptableObject
     public Sprite icon;
 
 
-    private float numOfPowerUps;
+    
 
     public void ApplyBonus()
     {
@@ -67,6 +68,10 @@ public class PowerUp : ScriptableObject
         }
     }
 
+    public float GetNumOfPowerUps()
+    {
+        return numOfPowerUps;
+    }
 
     public void AddPowerUp()
     {

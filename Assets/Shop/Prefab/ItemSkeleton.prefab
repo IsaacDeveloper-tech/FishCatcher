@@ -92,9 +92,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerup: {fileID: 0}
-  mainSprite: {fileID: 0}
-  numOfItems: {fileID: 0}
-  price: {fileID: 0}
+  mainSprite: {fileID: 7387523178475726996}
+  numOfItems: {fileID: 7387523179402501759}
+  price: {fileID: 7387523179283021618}
 --- !u!1 &7387523178475726985
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +212,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7387523178475726996}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7387523178475211377}
+        m_MethodName: BuyPowerUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7387523179195423898
 GameObject:
   m_ObjectHideFlags: 0

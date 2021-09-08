@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 121430374}
   - component: {fileID: 121430373}
   - component: {fileID: 121430375}
+  - component: {fileID: 121430376}
   m_Layer: 5
   m_Name: ShopPanel
   m_TagString: Untagged
@@ -215,6 +216,30 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 29b31c5f9d6364640950d7b0fd9ffd8d, type: 2}
   skeleton: {fileID: 7387523178475211381, guid: 508ec4738538b024385e74dbb43d1f45,
     type: 3}
+--- !u!114 &121430376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121430371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 200, y: 200}
+  m_Spacing: {x: 50, y: 0}
+  m_Constraint: 1
+  m_ConstraintCount: 4
 --- !u!1 &486189798
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +432,6 @@ GameObject:
   m_Component:
   - component: {fileID: 818390455}
   - component: {fileID: 818390454}
-  - component: {fileID: 818390456}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -445,22 +469,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &818390456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818390453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef2b18a5e71516489eaaf43a1a67052, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerup: {fileID: 0}
-  mainSprite: {fileID: 0}
-  numOfItems: {fileID: 0}
-  price: {fileID: 0}
 --- !u!1 &848726059
 GameObject:
   m_ObjectHideFlags: 0
