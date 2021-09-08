@@ -13,12 +13,18 @@ public enum Bonus
 [CreateAssetMenu(fileName = "PowerUpData", menuName = "ScriptableObjects/PowerUp", order = 1)]
 public class PowerUp : ScriptableObject
 {
+
+    [Header("Basic Data of Power Up")]
     public string namePU;
     public float basePrice;
     public float multiplier;
-    public List<FloatType> attributeToApplyBonus = new List<FloatType>();
     public string description;
     public Bonus typeOfBonus;
+
+    [Header("This bonus change this values")]
+    public List<FloatType> attributeToApplyBonus = new List<FloatType>();
+
+    [Header("Aspect of Item")]
     public Sprite icon;
 
 

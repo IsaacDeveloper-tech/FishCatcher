@@ -1,25 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ItemShopComponent : MonoBehaviour
 {
     [Header("PowerUp Configuration")]
     public PowerUp powerup;
 
-    [Header("MoneySystem")]
+    [Header("Image Components")]
+    public Sprite mainSprite;
 
-    //Components
-    private SpriteRenderer render;
+    [Header("Text components")]
+    public TextMeshProUGUI numOfItems;
+    public TextMeshProUGUI price;
 
 
     void Start()
     {
 
-        //Create SpriteComponent to show powerup sprite
-        gameObject.AddComponent<SpriteRenderer>();
-        render = GetComponent<SpriteRenderer>();
-        render.sprite = powerup.icon;
     }
 
     public void BuyPowerUp()
