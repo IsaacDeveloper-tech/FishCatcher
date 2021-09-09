@@ -16,6 +16,10 @@ public class ItemShopComponent : MonoBehaviour
     public TextMeshProUGUI numOfItems;
     public TextMeshProUGUI price;
 
+    [Header("Shop Config")]
+    public FloatType multipliePrice;
+    
+
 
     void Start()
     {

@@ -34,8 +34,6 @@ public class ItemSpawner : MonoBehaviour, IFactory
 
             temp = Instantiate(skeleton);
 
-            
-
             temp.transform.SetParent(transform);
         }
     }
