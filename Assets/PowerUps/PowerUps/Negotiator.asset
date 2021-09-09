@@ -16,5 +16,7 @@ MonoBehaviour:
   basePrice: 100
   multiplier: 0.01
   description: Decrease the price of the store by 1% (According to the CURRENT price)
-  type: 2
-  icon: {fileID: 0}
+  typeOfBonus: 0
+  numOfPowerUps: 0
+  attributeToApplyBonus: []
+  icon: {fileID: 6708733205153277002, guid: f6e3c9be0e79803469383235dd38f56d, type: 3}

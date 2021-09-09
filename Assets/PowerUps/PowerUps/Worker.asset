@@ -16,5 +16,7 @@ MonoBehaviour:
   basePrice: 100
   multiplier: 0.01
   description: Increases the effectiveness of the collector by 1%
-  type: 1
-  icon: {fileID: 0}
+  typeOfBonus: 0
+  numOfPowerUps: 0
+  attributeToApplyBonus: []
+  icon: {fileID: 3386662938922423588, guid: f6e3c9be0e79803469383235dd38f56d, type: 3}

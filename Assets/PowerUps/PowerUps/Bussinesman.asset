@@ -16,5 +16,7 @@ MonoBehaviour:
   basePrice: 100
   multiplier: 0.01
   description: Increase the money you get by selling fish by 1%
-  type: 0
-  icon: {fileID: 0}
+  typeOfBonus: 0
+  numOfPowerUps: 0
+  attributeToApplyBonus: []
+  icon: {fileID: 6813553822765877458, guid: f6e3c9be0e79803469383235dd38f56d, type: 3}
