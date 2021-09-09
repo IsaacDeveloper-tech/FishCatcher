@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemSpawner : MonoBehaviour, IFactory
 {
     [Header("PowerUps Configuration")]
-    public List<PowerUp> powerUps = new List<PowerUp>();
+    public Shop shop;
 
     [Header("Skeleton")]
     public GameObject skeleton;
@@ -28,9 +28,9 @@ public class ItemSpawner : MonoBehaviour, IFactory
 
         GameObject temp = null;
 
-        for (int i = 0; i < powerUps.Count; i++)
+        for (int i = 0; i < shop.powerUps.Count; i++)
         {
-            component.powerup = powerUps[i];
+            component.powerup = shop.powerUps[i];
 
             temp = Instantiate(skeleton);
 

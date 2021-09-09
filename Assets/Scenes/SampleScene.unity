@@ -628,11 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6205cbae8c0ba4b478b311adcdbafee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUps:
-  - {fileID: 11400000, guid: 1e544a75bb112834d86939530fd45153, type: 2}
-  - {fileID: 11400000, guid: bb306730718f3584a9867d4ba69de3a9, type: 2}
-  - {fileID: 11400000, guid: 4f89ab86982edbb4ca3c6f7b983b17a0, type: 2}
-  - {fileID: 11400000, guid: 29b31c5f9d6364640950d7b0fd9ffd8d, type: 2}
+  shop: {fileID: 11400000, guid: ec0559688c286c04f910649cc9faef02, type: 2}
   skeleton: {fileID: 7387523178475211381, guid: 508ec4738538b024385e74dbb43d1f45,
     type: 3}
 --- !u!114 &1231706555
