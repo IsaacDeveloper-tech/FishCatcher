@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 924074fd6cbf3af4aba75261eb7d44fb, type: 3}
-  m_Name: MultiplierBussinesman
+  m_Name: SellMultiplier
   m_EditorClassIdentifier: 
-  value: 0.5
-  runtimeValue: 0.5
+  value: 1.5
+  runtimeValue: 1.5

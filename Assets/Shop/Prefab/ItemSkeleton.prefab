@@ -97,6 +97,7 @@ MonoBehaviour:
   price: {fileID: 7387523179283021618}
   priceUpdater: {fileID: 3159035144681593242}
   multipliePrice: {fileID: 11400000, guid: 542bcf834a1160e4080fc56a0eed473b, type: 2}
+  money: {fileID: 11400000, guid: a6a1823d848ee144f9da7a76ed0e437a, type: 2}
 --- !u!1 &7387523178475726985
 GameObject:
   m_ObjectHideFlags: 0

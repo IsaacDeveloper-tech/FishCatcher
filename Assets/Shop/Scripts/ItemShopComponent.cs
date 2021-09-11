@@ -21,6 +21,7 @@ public class ItemShopComponent : MonoBehaviour
 
     [Header("Shop Config")]
     public FloatType multipliePrice;
+    public FloatType money;
     
 
 
@@ -34,10 +35,19 @@ public class ItemShopComponent : MonoBehaviour
 
     public void BuyPowerUp()
     {
-        powerup.ApplyBonus();
-        IncreaseNumOfItems();
-        IncreaseBasePrice();
-        UpdateItemValues();
+        if (powerup.basePrice.runtimeValue < money.runtimeValue)
+        {
+            powerup.ApplyBonus();
+            SpendMoney();
+            IncreaseNumOfItems();
+            IncreaseBasePrice();
+            UpdateItemValues();
+        }
+    }
+
+    public void SpendMoney()
+    {
+        money.runtimeValue -= powerup.basePrice.runtimeValue;
     }
 
     public void IncreaseNumOfItems()
