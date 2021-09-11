@@ -16,11 +16,11 @@ public class PowerUp : ScriptableObject
 
     [Header("Basic Data of Power Up")]
     public string namePU;
-    public float basePrice;
-    public float multiplier;
-    public string description;
+    public FloatType basePrice;
+    public FloatType multiplier;
+    [TextArea]public string description;
     public Bonus typeOfBonus;
-    public float numOfPowerUps;
+    public FloatType numOfPowerUps;
 
     [Header("This bonus change this values")]
     public List<FloatType> attributeToApplyBonus = new List<FloatType>();
@@ -44,8 +44,6 @@ public class PowerUp : ScriptableObject
                 break;
         }
 
-        AddPowerUp();
-
     }
 
 
@@ -55,7 +53,7 @@ public class PowerUp : ScriptableObject
     {
         for (int i = 0; i < attributeToApplyBonus.Count; i++)
         {
-            attributeToApplyBonus[i].runtimeValue = attributeToApplyBonus[i].value * multiplier;
+            attributeToApplyBonus[i].runtimeValue = attributeToApplyBonus[i].runtimeValue * multiplier.runtimeValue;
         }
     }
 
@@ -64,18 +62,13 @@ public class PowerUp : ScriptableObject
     {
         for (int i = 0; i < attributeToApplyBonus.Count; i++)
         {
-            attributeToApplyBonus[i].runtimeValue = attributeToApplyBonus[i].value + multiplier;
+            attributeToApplyBonus[i].runtimeValue = attributeToApplyBonus[i].runtimeValue + multiplier.runtimeValue;
         }
     }
 
     public float GetNumOfPowerUps()
     {
-        return numOfPowerUps;
-    }
-
-    public void AddPowerUp()
-    {
-        numOfPowerUps++;
+        return numOfPowerUps.runtimeValue;
     }
 
     public void SubtractPowerUp()

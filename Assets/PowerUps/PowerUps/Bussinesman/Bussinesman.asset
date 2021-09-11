@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Bussinesman
   m_EditorClassIdentifier: 
   namePU: Businessman
-  basePrice: 100
-  multiplier: 0.01
+  basePrice: {fileID: 11400000, guid: ba3c3a3499b2a9f459c251dd92b78961, type: 2}
+  multiplier: {fileID: 11400000, guid: dd419156ad0866346ba298b65949781d, type: 2}
   description: Increase the money you get by selling fish by 1%
   typeOfBonus: 0
-  numOfPowerUps: 0
+  numOfPowerUps: {fileID: 11400000, guid: d63b1da0deffc2e459c63bb2ef630b81, type: 2}
   attributeToApplyBonus: []
   icon: {fileID: 6813553822765877458, guid: f6e3c9be0e79803469383235dd38f56d, type: 3}

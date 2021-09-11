@@ -16,6 +16,9 @@ public class ItemShopComponent : MonoBehaviour
     public TextMeshProUGUI numOfItems;
     public TextMeshProUGUI price;
 
+    [Header("Other Components")]
+    public TextUpdater priceUpdater;
+
     [Header("Shop Config")]
     public FloatType multipliePrice;
     
@@ -24,14 +27,35 @@ public class ItemShopComponent : MonoBehaviour
     void Start()
     {
         numOfItems.text = "X" + powerup.GetNumOfPowerUps().ToString();
-        price.text = powerup.basePrice.ToString();
+        price.text = powerup.basePrice.runtimeValue.ToString();
         mainSprite.sprite = powerup.icon;
+        priceUpdater.value = powerup.basePrice;
     }
 
     public void BuyPowerUp()
     {
-        numOfItems.text = "X" + powerup.GetNumOfPowerUps().ToString();
         powerup.ApplyBonus();
+        IncreaseNumOfItems();
+        IncreaseBasePrice();
+        UpdateItemValues();
+    }
+
+    public void IncreaseNumOfItems()
+    {
+        powerup.numOfPowerUps.runtimeValue++;
+    }
+
+    public void IncreaseBasePrice()
+    {
+        powerup.basePrice.runtimeValue *= multipliePrice.runtimeValue;
+        Debug.Log(powerup.basePrice.runtimeValue);
+    }
+
+
+    public void UpdateItemValues()
+    {
+        numOfItems.text = "X" + powerup.GetNumOfPowerUps().ToString();
+        price.text = powerup.basePrice.runtimeValue.ToString();
     }
 
 }

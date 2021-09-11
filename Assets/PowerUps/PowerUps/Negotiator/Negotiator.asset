@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ab4ef4d06a86d458841000595052f3, type: 3}
+  m_Name: Negotiator
+  m_EditorClassIdentifier: 
+  namePU: Negotiator
+  basePrice: {fileID: 11400000, guid: 6d47037e93b2465408ed1cb85206b7e9, type: 2}
+  multiplier: {fileID: 11400000, guid: a3511ccec0185d14886c98fec33b0d12, type: 2}
+  description: Decrease the price of the store by 2% (According to the CURRENT price)
+  typeOfBonus: 1
+  numOfPowerUps: {fileID: 11400000, guid: 9eff3a8024bec0646941701776a4c387, type: 2}
+  attributeToApplyBonus:
+  - {fileID: 11400000, guid: ba3c3a3499b2a9f459c251dd92b78961, type: 2}
+  - {fileID: 11400000, guid: 6d47037e93b2465408ed1cb85206b7e9, type: 2}
+  - {fileID: 11400000, guid: 2bcc4f3fc776e2844936c994523b14c4, type: 2}
+  - {fileID: 11400000, guid: 92518605c924d92489478e4b16103f1f, type: 2}
+  icon: {fileID: 6708733205153277002, guid: f6e3c9be0e79803469383235dd38f56d, type: 3}

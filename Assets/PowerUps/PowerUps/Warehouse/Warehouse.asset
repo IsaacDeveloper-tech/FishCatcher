@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Warehouse
   m_EditorClassIdentifier: 
   namePU: Warehouse
-  basePrice: 100
-  multiplier: 0.1
+  basePrice: {fileID: 11400000, guid: 2bcc4f3fc776e2844936c994523b14c4, type: 2}
+  multiplier: {fileID: 11400000, guid: d73abae63c5cd2f41b7d12a969ff16ba, type: 2}
   description: 
   typeOfBonus: 0
-  numOfPowerUps: 0
-  attributeToApplyBonus: []
+  numOfPowerUps: {fileID: 11400000, guid: f080e077a306f16459cf59d55d9713b9, type: 2}
+  attributeToApplyBonus:
+  - {fileID: 11400000, guid: 2fe1ca3535e4f0a4393e2f7e0f219bb4, type: 2}
   icon: {fileID: -6110656803992641779, guid: f6e3c9be0e79803469383235dd38f56d, type: 3}

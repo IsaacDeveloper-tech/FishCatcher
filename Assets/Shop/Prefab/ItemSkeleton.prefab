@@ -95,6 +95,8 @@ MonoBehaviour:
   mainSprite: {fileID: 7387523178475726996}
   numOfItems: {fileID: 7387523179402501759}
   price: {fileID: 7387523179283021618}
+  priceUpdater: {fileID: 3159035144681593242}
+  multipliePrice: {fileID: 11400000, guid: 542bcf834a1160e4080fc56a0eed473b, type: 2}
 --- !u!1 &7387523178475726985
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7387523179283021621}
   - component: {fileID: 7387523179283021619}
+  - component: {fileID: 3159035144681593242}
   - component: {fileID: 7387523179283021618}
   m_Layer: 5
   m_Name: Price
@@ -344,6 +347,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7387523179283021620}
   m_CullTransparentMesh: 0
+--- !u!114 &3159035144681593242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7387523179283021620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da9eb466b25cc048882e4e77405371c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textToUpdate: {fileID: 7387523179283021618}
+  value: {fileID: 0}
 --- !u!114 &7387523179283021618
 MonoBehaviour:
   m_ObjectHideFlags: 0
