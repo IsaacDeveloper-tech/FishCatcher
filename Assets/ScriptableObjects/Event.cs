@@ -6,9 +6,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "GameEvent", menuName = "ScriptableObjects/Event")]
 public class Event : ScriptableObject
 {
-    private List<EventListener> listeners = new List<EventListener>();
+    private List<GameEventListener> listeners = new List<GameEventListener>();
 
-    public void RegisterListener(EventListener plistener)
+    public void RegisterListener(GameEventListener plistener)
     {
         if (!listeners.Contains(plistener))
         {
@@ -16,7 +16,7 @@ public class Event : ScriptableObject
         }
     }
 
-    public void UnregisterListener(EventListener plistener)
+    public void UnregisterListener(GameEventListener plistener)
     {
         if (listeners.Contains(plistener))
         {

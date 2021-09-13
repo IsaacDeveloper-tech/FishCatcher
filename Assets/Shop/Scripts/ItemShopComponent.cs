@@ -22,6 +22,10 @@ public class ItemShopComponent : MonoBehaviour
     [Header("Shop Config")]
     public FloatType multipliePrice;
     public FloatType money;
+    public ShopInfoPanelData infoPanel;
+
+    [Header("Events")]
+    public Event onShowInfoPowerUp;
     
 
 
@@ -66,6 +70,15 @@ public class ItemShopComponent : MonoBehaviour
     {
         numOfItems.text = "X" + powerup.GetNumOfPowerUps().ToString();
         price.text = powerup.basePrice.runtimeValue.ToString();
+    }
+
+    public void ShowInfoPowerUp()
+    {
+        infoPanel.SetTitle(powerup.namePU);
+        infoPanel.SetInfo(powerup.description);
+        infoPanel.SetSprite(powerup.icon);
+
+        onShowInfoPowerUp.Raise();
     }
 
 }

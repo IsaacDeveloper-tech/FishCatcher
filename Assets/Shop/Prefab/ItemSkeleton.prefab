@@ -98,6 +98,8 @@ MonoBehaviour:
   priceUpdater: {fileID: 3159035144681593242}
   multipliePrice: {fileID: 11400000, guid: 542bcf834a1160e4080fc56a0eed473b, type: 2}
   money: {fileID: 11400000, guid: a6a1823d848ee144f9da7a76ed0e437a, type: 2}
+  infoPanel: {fileID: 11400000, guid: 01292d68806185b419560a8fa48a07fc, type: 2}
+  onShowInfoPowerUp: {fileID: 11400000, guid: 8fcb5882811dac84194f5dc1637b1388, type: 2}
 --- !u!1 &7387523178475726985
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,4 +703,15 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7387523179791266840}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7387523178475211377}
+        m_MethodName: ShowInfoPowerUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

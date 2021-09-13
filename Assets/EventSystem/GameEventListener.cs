@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 
-public class EventListener : MonoBehaviour
+public class GameEventListener : MonoBehaviour
 {
     public Event gameEvent;
 
