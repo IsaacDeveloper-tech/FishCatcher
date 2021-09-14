@@ -11,6 +11,8 @@ public class PlayerScript : MonoBehaviour
 
     public GathererScript collector;
 
+    public Event onTick;
+
 
     void Start()
     {
@@ -33,6 +35,8 @@ public class PlayerScript : MonoBehaviour
         {
             temp = 0;
             yield return new WaitForSeconds(1);
+
+            onTick.Raise();
 
             temp = fishes.runtimeValue + collector.GetFishes();
 

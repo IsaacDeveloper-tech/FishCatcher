@@ -26,6 +26,7 @@ public class ItemShopComponent : MonoBehaviour
 
     [Header("Events")]
     public Event onShowInfoPowerUp;
+    public Event onBuyItem;
     
 
 
@@ -39,13 +40,14 @@ public class ItemShopComponent : MonoBehaviour
 
     public void BuyPowerUp()
     {
-        if (powerup.basePrice.runtimeValue < money.runtimeValue)
+        if (powerup.basePrice.runtimeValue <= money.runtimeValue)
         {
             powerup.ApplyBonus();
             SpendMoney();
             IncreaseNumOfItems();
             IncreaseBasePrice();
             UpdateItemValues();
+            onBuyItem.Raise();
         }
     }
 

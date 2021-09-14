@@ -40,7 +40,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -352, y: 196}
-  m_SizeDelta: {x: 250, y: 250}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7387523178475211376
 CanvasRenderer:
@@ -100,6 +100,7 @@ MonoBehaviour:
   money: {fileID: 11400000, guid: a6a1823d848ee144f9da7a76ed0e437a, type: 2}
   infoPanel: {fileID: 11400000, guid: 01292d68806185b419560a8fa48a07fc, type: 2}
   onShowInfoPowerUp: {fileID: 11400000, guid: 8fcb5882811dac84194f5dc1637b1388, type: 2}
+  onBuyItem: {fileID: 11400000, guid: ecc66d36233ce2f45b286b670b577d68, type: 2}
 --- !u!1 &7387523178475726985
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,8 +265,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 40}
-  m_SizeDelta: {x: 0, y: 80}
+  m_AnchoredPosition: {x: 0, y: 12.63}
+  m_SizeDelta: {x: 0, y: 25.250748}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7387523179195423897
 CanvasRenderer:
@@ -339,8 +340,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -41.23}
+  m_SizeDelta: {x: 200, y: 67.54784}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7387523179283021619
 CanvasRenderer:
@@ -410,8 +411,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 19.9
+  m_fontSizeBase: 19.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -486,8 +487,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -8.07}
+  m_SizeDelta: {x: 200, y: 33.855988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7387523179402501756
 CanvasRenderer:
@@ -543,8 +544,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 13.8
+  m_fontSizeBase: 13.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -621,7 +622,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 80}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7387523179791266841
 CanvasRenderer:
