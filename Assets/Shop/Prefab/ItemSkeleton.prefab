@@ -101,6 +101,7 @@ MonoBehaviour:
   infoPanel: {fileID: 11400000, guid: 01292d68806185b419560a8fa48a07fc, type: 2}
   onShowInfoPowerUp: {fileID: 11400000, guid: 8fcb5882811dac84194f5dc1637b1388, type: 2}
   onBuyItem: {fileID: 11400000, guid: ecc66d36233ce2f45b286b670b577d68, type: 2}
+  onClickButton: {fileID: 11400000, guid: 5a4c92e47286064418401ec7fbd52bcc, type: 2}
 --- !u!1 &7387523178475726985
 GameObject:
   m_ObjectHideFlags: 0

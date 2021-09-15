@@ -27,6 +27,7 @@ public class ItemShopComponent : MonoBehaviour
     [Header("Events")]
     public Event onShowInfoPowerUp;
     public Event onBuyItem;
+    public Event onClickButton;
     
 
 
@@ -81,6 +82,7 @@ public class ItemShopComponent : MonoBehaviour
         infoPanel.SetSprite(powerup.icon);
 
         onShowInfoPowerUp.Raise();
+        onClickButton.Raise();
     }
 
 }

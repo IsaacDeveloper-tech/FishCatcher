@@ -7,14 +7,19 @@ using UnityEngine.UI;
 
 public class ShopInfoPanelSystem : MonoBehaviour
 {
-
+    [Space]
     [Header("Info data")]
     public ShopInfoPanelData data;
 
+    [Space]
     [Header("Components")]
     public TextMeshProUGUI title;
     public TextMeshProUGUI info;
     public Image image;
+
+    [Space]
+    [Header("Events")]
+    public Event OnClickButton;
 
     //List of IEnumerators
     private IEnumerator appear;
@@ -38,6 +43,7 @@ public class ShopInfoPanelSystem : MonoBehaviour
     {
         StopCoroutine(appear);
         StartCoroutine(hidde);
+        OnClickButton.Raise();
     }
 
     private void SetInfo()
