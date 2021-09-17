@@ -16,6 +16,6 @@ public class TextSceneUpdater : MonoBehaviour
 
     public void UpdateFishCounter()
     {
-        textToUpdate.text = value.runtimeValue.ToString();
+        textToUpdate.text = Mathf.Round(value.runtimeValue).ToString();
     }
 }

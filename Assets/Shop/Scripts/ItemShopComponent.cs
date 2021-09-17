@@ -65,7 +65,6 @@ public class ItemShopComponent : MonoBehaviour
     public void IncreaseBasePrice()
     {
         powerup.basePrice.runtimeValue *= multipliePrice.runtimeValue;
-        Debug.Log(powerup.basePrice.runtimeValue);
     }
 
 

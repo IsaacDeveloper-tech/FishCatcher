@@ -49,8 +49,6 @@ public class SaveSystem : MonoBehaviour
 
         writer.Close();
 
-        Debug.Log(temp);
-
     }
 
     public void LoadData()
