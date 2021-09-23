@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ab4ef4d06a86d458841000595052f3, type: 3}
   m_Name: Worker
   m_EditorClassIdentifier: 
-  namePU: Worker
+  namePU: Fisherman
   basePrice: {fileID: 11400000, guid: 92518605c924d92489478e4b16103f1f, type: 2}
   multiplier: {fileID: 11400000, guid: 22e2ea97e178b3647b787920e1bf2196, type: 2}
   description: Increases the effectiveness of the collector by 1%
@@ -20,4 +20,4 @@ MonoBehaviour:
   numOfPowerUps: {fileID: 11400000, guid: 9e231f36c72c5004eae53d889e5a03d8, type: 2}
   attributeToApplyBonus:
   - {fileID: 11400000, guid: 6103baf6ac79dbf4fb23a413fdd563f8, type: 2}
-  icon: {fileID: 3386662938922423588, guid: f6e3c9be0e79803469383235dd38f56d, type: 3}
+  icon: {fileID: 3410918491446568398, guid: 8f98e60a7101ae345812f99ce0ef223e, type: 3}
