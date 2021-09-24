@@ -16,6 +16,13 @@ public class SoundSystem : MonoBehaviour
     public AudioClip clickSoundMenu;
     public AudioClip sellFishSound;
     public AudioClip buyPowerUpSound;
+    public AudioClip clickAFish;
+
+    public void OnClickAFish()
+    {
+        source.clip = clickAFish;
+        source.Play();
+    }
 
     public void OnClickMenu()
     {

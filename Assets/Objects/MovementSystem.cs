@@ -95,7 +95,7 @@ public class MovementSystem : MonoBehaviour
     }
 
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
         Gizmos.color = gizmoColor;
 
