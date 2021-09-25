@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 25894173442362208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WayPoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 25894173443740933}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WayPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 25894173827387984}
   - component: {fileID: 25894173827387987}
   - component: {fileID: 25894173827387986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fish
   m_TagString: Fish
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 25894174351017440}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FishSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}

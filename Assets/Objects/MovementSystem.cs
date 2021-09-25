@@ -67,26 +67,30 @@ public class MovementSystem : MonoBehaviour
     {
         if (usePhysics)
         {
-            if (Mathf.Abs(waypoints[wayCount].position.x - transform.position.x) < .5f)
+            if (waypoints.Length > 0)
             {
-                wayCount++;
-            }
+                if (Mathf.Abs(waypoints[wayCount].position.x - transform.position.x) < .5f)
+                {
+                    wayCount++;
+                }
 
-            if (wayCount >= waypoints.Length)
-            {
-                wayCount = 0;
-            }
+                if (wayCount >= waypoints.Length)
+                {   
+                    wayCount = 0;
+                }
 
 
-            if (waypoints[wayCount].position.x < transform.position.x)
-            {
-                physics.velocity = new Vector2(-1 * speed, physics.velocity.y);
-                transform.localScale = new Vector3(1, 1, 1);
-            }
-            else
-            {
-                physics.velocity = new Vector2(1 * speed, physics.velocity.y);
-                transform.localScale = new Vector3(-1, 1, 1);
+                if (waypoints[wayCount].position.x < transform.position.x)
+                {
+                    physics.velocity = new Vector2(-1 * speed, physics.velocity.y);
+                    transform.localScale = new Vector3(1, 1, 1);
+                }
+                else
+                {
+                    physics.velocity = new Vector2(1 * speed, physics.velocity.y);
+                    transform.localScale = new Vector3(-1, 1, 1);
+                }
+
             }
 
             //physics.AddForce(new Vector2(((waypoints[wayCount].position.x - transform.position.x) / (waypoints[wayCount].position.x - transform.position.x)) * speed, 0));
