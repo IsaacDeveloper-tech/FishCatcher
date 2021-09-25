@@ -67,12 +67,6 @@ public class ObjectSpawner : MonoBehaviour
                     objSpawned.GetComponentInChildren<SpriteRenderer>().color = Color.blue;
                     break;
             }
-
-            /*objSpawned.GetComponentInChildren<SpriteRenderer>().color = new Color(
-                    Random.Range(100, 200),
-                    Random.Range(150, 250),
-                    Random.Range(0, 1)
-               );*/
         }
 
         objSpawned.transform.position = new Vector3(xAxis, yAxis, 0) + (Vector3)areaPosition;
