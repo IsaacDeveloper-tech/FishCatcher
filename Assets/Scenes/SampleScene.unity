@@ -1213,10 +1213,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 519229837}
-  clickSoundMenu: {fileID: 8300000, guid: c200b8c7cdda35240a8e61fc30d44248, type: 3}
-  sellFishSound: {fileID: 8300000, guid: 4637866074fffe849a6ff1727194462e, type: 3}
-  buyPowerUpSound: {fileID: 8300000, guid: ebd1b12a233c272428408539d9f56ce2, type: 3}
-  clickAFish: {fileID: 8300000, guid: 964e504618971114fb9b55429161f774, type: 3}
+  clickSoundMenu: {fileID: 8300000, guid: e2d4b685c324e5d48aeca7ee62d9a145, type: 3}
+  sellFishSound: {fileID: 8300000, guid: 8dcb71f4f1325b4408137f7904ef7e8d, type: 3}
+  buyPowerUpSound: {fileID: 8300000, guid: a0a8780eebcd5dd4ca7f3956c0c7810a, type: 3}
+  clickAFish: {fileID: 8300000, guid: 326fc2c5b045f8c47bd037845227e0ee, type: 3}
 --- !u!82 &519229837
 AudioSource:
   m_ObjectHideFlags: 0
