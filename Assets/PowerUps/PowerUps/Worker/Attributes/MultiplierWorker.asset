@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924074fd6cbf3af4aba75261eb7d44fb, type: 3}
   m_Name: MultiplierWorker
   m_EditorClassIdentifier: 
-  value: 0.1
-  runtimeValue: 0.1
+  value: 1

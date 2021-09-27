@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924074fd6cbf3af4aba75261eb7d44fb, type: 3}
   m_Name: MultiplierBussinesman
   m_EditorClassIdentifier: 
-  value: 0.5
-  runtimeValue: 0.5
+  value: 0.01

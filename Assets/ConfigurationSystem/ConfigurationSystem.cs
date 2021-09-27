@@ -44,4 +44,10 @@ public class ConfigurationSystem : MonoBehaviour
         show = false;
     }
 
+
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
+
 }

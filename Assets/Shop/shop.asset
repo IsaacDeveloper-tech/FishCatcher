@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: shop
   m_EditorClassIdentifier: 
   powerUps:
+  - {fileID: 11400000, guid: 29b31c5f9d6364640950d7b0fd9ffd8d, type: 2}
+  - {fileID: 11400000, guid: 4f89ab86982edbb4ca3c6f7b983b17a0, type: 2}
   - {fileID: 11400000, guid: 1e544a75bb112834d86939530fd45153, type: 2}
   - {fileID: 11400000, guid: bb306730718f3584a9867d4ba69de3a9, type: 2}
-  - {fileID: 11400000, guid: 4f89ab86982edbb4ca3c6f7b983b17a0, type: 2}
-  - {fileID: 11400000, guid: 29b31c5f9d6364640950d7b0fd9ffd8d, type: 2}

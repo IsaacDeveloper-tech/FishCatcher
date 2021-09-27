@@ -15,7 +15,7 @@ MonoBehaviour:
   namePU: Warehouse waiter
   basePrice: {fileID: 11400000, guid: 2bcc4f3fc776e2844936c994523b14c4, type: 2}
   multiplier: {fileID: 11400000, guid: d73abae63c5cd2f41b7d12a969ff16ba, type: 2}
-  description: 
+  description: Increases maximum fish capacity (+100)
   typeOfBonus: 0
   numOfPowerUps: {fileID: 11400000, guid: f080e077a306f16459cf59d55d9713b9, type: 2}
   attributeToApplyBonus:

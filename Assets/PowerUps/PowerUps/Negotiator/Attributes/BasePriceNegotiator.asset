@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924074fd6cbf3af4aba75261eb7d44fb, type: 3}
   m_Name: BasePriceNegotiator
   m_EditorClassIdentifier: 
-  value: 100
-  runtimeValue: 100
+  value: 2000
